@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class Etl {
    public Map<String, Integer> transform(Map<Integer, List<String>> old) {
-      Map<String, Integer> transformedData = new HashMap<>();
+        Map<String, Integer> transformedData = new HashMap<>();
     
 		old.forEach((score, letters) -> {
 			letters.stream()
