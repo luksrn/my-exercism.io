@@ -1,5 +1,5 @@
 public class Anagram {
-  private Map<Character,Integer> statistics = new HashMap<>();
+  	private Map<Character,Integer> statistics = new HashMap<>();
 	
 	public Anagram(String word) {
 		statistics = statisticsOf(word);
