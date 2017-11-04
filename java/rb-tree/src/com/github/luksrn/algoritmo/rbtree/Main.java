@@ -13,6 +13,8 @@ public class Main {
 		tree.insert(89);
 		tree.insert(76);
 		
+		System.out.println("Minimum = " + tree.treeMinimum());
+		
 		tree.rbPrint();
 		tree.rbCheck();
 

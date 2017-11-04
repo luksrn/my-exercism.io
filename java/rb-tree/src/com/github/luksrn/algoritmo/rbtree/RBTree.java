@@ -136,7 +136,17 @@ public class RBTree <T extends Comparable<T>> {
 		}
 	}
 	
+	public Node<T> treeMinimum() {
+		return treeMinimum(root);
+	}
 	
+	
+	private Node<T> treeMinimum(Node<T> r) {
+		if(isNil(r) || isNil(r.left)) {
+			return r;
+		}
+		return treeMinimum(r.left);
+	}
 	public void rbPrint() {
 		printInOrder(root);
 	}
